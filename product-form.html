@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lusso Demo Site</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ----------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <!-- -------------------------------------------------- -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="phone.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container justify-content-between">
+          <!-- Left elements -->
+          <div class="left-element">
+            <div class="whats-logo">
+              <a href=""><img src="asset/images/whats.svg" alt="" /></a>
+            </div>
+          </div>
+          <!-- Left elements -->
+
+          <!-- Center elements -->
+          <div class="center-element">
+            <div class="main-logo">
+              <a href="">
+                <img src="asset/images/image 1.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- Center elements -->
+
+          <!-- Right elements -->
+          <div class="right-elemet">
+            <a href="">
+              <img src="asset/images/shopping-cart_1170678 1.png" alt="" />
+            </a>
+            <div class="cart-count">1</div>
+          </div>
+          <!-- Right elements -->
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- =================== Multi Step Form ====================== -->
+    <!-- ========================================================== -->
+    <div class="product-multi-form">
+      <form cl id="regForm" action="">
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <div
+            class="tab-pro-sec d-flex justify-content-center align-items-start"
+          >
+            <div class="product-form">
+              <h4>Select Product</h4>
+              <div class="pro-inp">
+                <label for="">Select Product</label>
+                <select name="" class="form-select selects" id="">
+                  <option selected value="Roller Blinders">
+                    Roller Blinders
+                  </option>
+                  <option value="">Roller Blinders</option>
+                  <option value="">Roller Blinders</option>
+                  <option value="">Roller Blinders</option>
+                </select>
+              </div>
+              <div class="pro-row-inp">
+                <div class="row">
+                  <div class="col-md-6 col-12">
+                    <div class="pro-inp">
+                      <label for=""> Select Fabric </label>
+                      <select name="" class="selects form-select" id="">
+                        <option selected value="Zepel Draper">
+                          Zepel Draper
+                        </option>
+                        <option value="Zepel Draper">Zepel Draper</option>
+                        <option value="Zepel Draper">Zepel Draper</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="pro-inp">
+                      <label for=""> Choose Color </label>
+                      <select name="" class="selects form-select" id="">
+                        <option selected value="Pebble">Pebble</option>
+                        <option value="White">White</option>
+                        <option value="Purple">Purple</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="pro-inp">
+                      <label for=""> Specify Width </label>
+                      <input
+                        type="number"
+                        class="inputs"
+                        placeholder="1800 mm"
+                        name=""
+                        id=""
+                        min="0"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="pro-inp">
+                      <label for=""> Specify Drop </label>
+                      <input
+                        type="number"
+                        class="inputs"
+                        placeholder="1600 mm"
+                        name=""
+                        id=""
+                        min="0"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro-inp">
+                <label for="">Select Motor Type</label>
+                <select name="" class="form-select selects" id="">
+                  <option selected value="Premium Motors">
+                    Premium Motors
+                  </option>
+                  <option value="Premium Motors">Premium Motors</option>
+                  <option value="Premium Motors">Premium Motors</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="product-image d-flex justify-content-center align-items-center flex-column"
+            >
+              <div class="pro-img-head w-100">
+                <p>Sample Image</p>
+              </div>
+              <div class="pro-file-inp">
+                <div
+                  class="pro-label d-flex justify-content-center align-items-center"
+                >
+                  <input type="file" id="file-input" style="display: none" />
+                  <label for="file-input">
+                    <span class="file-span"
+                      ><img class="w-100" src="asset/images/pro-inp.png" alt=""
+                    /></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pro-form-total d-flex justify-content-between align-items-center"
+          >
+            <p>Total:</p>
+            <p>AUD $00.00</p>
+          </div>
+          <div class="pro-inp-btn">
+            <button class="custom-btn" type="button" onclick="nextPrev(1)">
+              Continue to Checkout
+            </button>
+          </div>
+          <div class="pro-inp-btn">
+            <a class="custom-btn dark" href="product-form.html">
+              Add Another Product
+            </a>
+          </div>
+        </div>
+        <div class="tab">
+          <div
+            class="tab-pro-sec d-flex justify-content-center align-items-start"
+          >
+            <div class="payment-form">
+              <h4>Checkout</h4>
+              <div class="row payment-row">
+                <div
+                  class="items-sec col-md-6 col-12 d-flex justify-content-center align-item-center flex-column"
+                >
+                  <div class="item-sec-header">
+                    <h6>Items in cart</h6>
+                  </div>
+                  <div class="item-card">
+                    <div
+                      class="item-card-header d-flex justify-content-between align-items-center"
+                    >
+                      <p>Roller Blinders</p>
+                      <div class="item-card-action">
+                        <a class="edit" href="product-form.html">EDIT</a>
+                        <a class="remove" href="#">REMOVE</a>
+                      </div>
+                    </div>
+                    <div class="item-card-content">
+                      <div class="item-card-text">
+                        <p>Fabric: Zepel Draper</p>
+                        <p>Color: Purple</p>
+                        <p>Size: 1800 x 1600</p>
+                        <p>Motor: Premium Motors</p>
+                      </div>
+                      <div class="item-card-image">
+                        <img src="asset/images/prod-img.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-total">
+                      <p>Total:</p>
+                      <p>AUD $16,978.00</p>
+                    </div>
+                  </div>
+                  <!-- ======================================== -->
+                  <hr />
+                  <!-- ========================================  -->
+                  <div class="item-card">
+                    <div
+                      class="item-card-header d-flex justify-content-between align-items-center"
+                    >
+                      <p>Roller Blinders</p>
+                      <div class="item-card-action">
+                        <a class="edit" href="product-form.html">EDIT</a>
+                        <a class="remove" href="#">REMOVE</a>
+                      </div>
+                    </div>
+                    <div class="item-card-content">
+                      <div class="item-card-text">
+                        <p>Fabric: Zepel Draper</p>
+                        <p>Color: Purple</p>
+                        <p>Size: 1800 x 1600</p>
+                        <p>Motor: Premium Motors</p>
+                      </div>
+                      <div class="item-card-image">
+                        <img src="asset/images/pay-img.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-total it-2">
+                      <p>Total:</p>
+                      <p>AUD $16,978.00</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="grand-total d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <span>Grand Total:</span>
+                    <p>AUD $16,978.00</p>
+                  </div>
+                </div>
+                <div
+                  class="card-pay-sec col-md-5 col-12 d-flex justify-content-start align-item-start flex-column"
+                >
+                  <div class="card-payment">
+                    <div class="personal-info">
+                      <div class="personal-inp">
+                        <label for="">Personal Details</label>
+                        <input type="text" placeholder="Name" class="inputs" />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="inputs"
+                        />
+                        <input type="text" placeholder="Phone" class="inputs" />
+                      </div>
+                    </div>
+                    <div class="personal-info card-info">
+                      <div class="personal-inp">
+                        <label for="">Payment Details</label>
+                        <div class="pay-info-img">
+                          <img src="asset/images/card-img.png" alt="" />
+                        </div>
+                        <input type="text" placeholder="Name" class="inputs" />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          class="inputs"
+                        />
+                        <input type="text" placeholder="Phone" class="inputs" />
+                        <div
+                          class="form-check d-flex justify-content-start align-items-center"
+                        >
+                          <input required class="checkbox" type="checkbox" />
+                          <p>
+                            I agree to the <a href="">Terms and Conditions.</a>
+                          </p>
+                        </div>
+                        <div
+                          class="login-form-btns d-flex justify-content-center align-items-center flex-column w-100"
+                        >
+                          <button class="custom-btn dark" type="submit">
+                            Confirm Payment
+                          </button>
+
+                          <a class="custom-btn" href="product-form.html"
+                            >Add Another Product</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment-form-sec"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div style="overflow: auto">
+          <div style="float: right">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+              Previous
+            </button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">
+              Next
+            </button>
+          </div>
+        </div> -->
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align: center; margin-top: 40px; display: none">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <!-- ========================================================== -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

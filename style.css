@@ -1,0 +1,499 @@
+:root {
+    --primary-bg: #F8F8F8;
+    --primary: #515151;
+    --white-color: #F8F8F8;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('asset/images/Avenir-Black.ttf');
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('asset/images/Avenir-Medium.ttf');
+}
+
+* {
+    font-family: Avenir;
+}
+
+.navbar {
+    height: 120px;
+    box-shadow: none;
+    background-color: var(--primary-bg);
+}
+
+p {
+    margin: 0px;
+}
+
+.multi-form {
+    margin-top: 80px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.main-container {
+    width: 72%;
+    margin: auto;
+}
+
+.custom-btn {
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 6px;
+    color: var(--primary);
+    text-align: center;
+    font-family: Avenir;
+}
+
+.dark {
+    background-color: var(--primary);
+    color: white;
+}
+
+.selects {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #5151513a;
+    border-radius: 6px;
+    padding-left: 30px;
+    font-family: Avenir;
+}
+
+.selects:focus {
+    box-shadow: none !important;
+    border-color: var(--primary) !important;
+    outline-color: var(--primary) !important;
+}
+
+.inputs {
+    width: 100%;
+    height: 60px;
+    border: 2px solid #5151513a;
+    border-radius: 6px;
+    padding: 30px;
+    font-family: Avenir;
+}
+
+.right-elemet {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    right: -10px;
+    top: -22px;
+    background-color: #BB4C4C;
+    color: white;
+    padding: 0px 8px;
+    border-radius: 100px;
+}
+
+
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+.login-form {
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    row-gap: 20px;
+}
+
+.login-inp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-form h4 {
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.form-check {
+    background-color: var(--primary-bg);
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    column-gap: 10px;
+}
+
+.form-check input {
+    width: 5%;
+    height: 15px;
+}
+
+.form-check p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form-check p a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.login-form-btns {
+    row-gap: 10px;
+    margin-top: 30px;
+}
+
+/* =========================== */
+/* ============ Register Page =============== */
+.login-form-btns span {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.12px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.login-form-btns span a {
+    color: #247247;
+}
+
+.register-message {
+    width: 40%;
+    margin: auto;
+    row-gap: 10px;
+    margin-top: 60px;
+}
+
+.reg-content h4 {
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32.78px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.reg-content p {
+    text-align: center;
+    padding-top: 50px;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.reg-btn {
+    margin-top: 80px;
+}
+
+/* ===================================================== */
+/* ==================  Multi Step Form  ================ */
+/* ===================================================== */
+/* #regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+} */
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+/* ===================================================== */
+/* ================== END  Multi Step Form  ============ */
+.product-multi-form {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.pro-inp-btn {
+    width: 78%;
+    margin-top: 30px;
+}
+
+.pro-form-total {
+    padding-top: 15px;
+    border-top: 1px solid #5151514a;
+    width: 78%;
+    margin-top: 30px;
+}
+
+/* ======================================== */
+/* ================ product Multi form ==================== */
+.pro-inp {
+    padding-top: 20px;
+}
+
+.pro-inp label {
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.12px;
+    text-align: left;
+}
+
+.product-form h4 {
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.product-image {
+    margin-left: 30px;
+    margin-top: 80px;
+    border: 1px solid #51515129;
+    border-radius: 6px;
+}
+
+.pro-label {
+    margin: 20px 30px;
+}
+
+.pro-img-head {
+    padding: 20px;
+    background-color: var(--primary-bg);
+    text-align: center;
+}
+
+.pro-inp-btn a {
+    padding: 18px 292px;
+}
+
+/* ================================================== Payment section =================================== */
+.payment-form {
+    width: 100%;
+}
+
+.items-sec {
+    padding: 0px;
+    border-radius: 6px;
+    border: 1px solid #5151512a;
+}
+
+.item-card-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 20px 0px 20px 0px;
+}
+
+.edit {
+    border-right: 1px solid #51515156;
+    padding-right: 10px;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.remove {
+    color: #BB4C4C;
+    font-size: 14px;
+}
+
+.item-card-header {
+    padding-bottom: 10px;
+}
+
+.item-card-header p {
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.86px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.item-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.item-card {
+    padding: 30px 20px;
+}
+
+.item-card-text {
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+
+.item-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.item-total p {
+    font-weight: 600;
+}
+
+.payment-form h4 {
+    font-family: Avenir;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+    letter-spacing: 0.02em;
+    text-align: start;
+    padding: 20px 0px 40px 0px;
+}
+
+.item-sec-header {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--primary-bg);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.item-sec-header h6 {
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24.59px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+hr {
+    width: 94%;
+    margin: auto;
+}
+
+.product-item-total {
+    padding: 20px;
+}
+
+.grand-total {}
+
+.grand-total span {
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.grand-total p {
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.it-2 {
+    border-top: 1px solid #5151513f;
+    padding-top: 20px;
+}
+
+.card-pay-sec {
+    margin-top: -34px;
+}
+
+.personal-inp label {
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21.86px;
+    text-align: left;
+}
+
+.personal-inp {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.card-info {
+    padding-top: 40px;
+}
+
+.pay-info-img {
+    background-color: #bfe3eb75;
+    /* padding: 20px; */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 2px solid #bfe3eb75;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-pay-sec {
+    width: 45%;
+}

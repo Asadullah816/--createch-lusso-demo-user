@@ -1,0 +1,88 @@
+@media(max-width:1500px) {
+    .register-message {
+        width: 60%;
+    }
+
+    .product-multi-form {
+        width: 70%;
+    }
+
+    .pro-inp-btn a {
+        padding: 18px 313px;
+    }
+}
+
+@media(max-width:1270px) {
+    .login-form {
+        width: 100%;
+    }
+
+    .product-multi-form {
+        width: 90%;
+    }
+
+    .pro-inp-btn a {
+        padding: 18px 279px;
+    }
+
+    .register-message {
+        width: 85%;
+    }
+}
+
+@media(max-width:1023px) {
+    .register-message {
+        width: 100%;
+    }
+
+    .card-pay-sec {
+        width: 48%;
+    }
+
+    .product-multi-form {
+        width: 95%;
+    }
+
+    .product-image {
+        margin-left: 20px;
+    }
+
+    .pro-img-head {
+        padding: 16px;
+    }
+
+    .pro-inp-btn a {
+        padding: 18px 204px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .main-container {
+        width: 92%;
+    }
+
+    .tab-pro-sec {
+        flex-direction: column;
+    }
+
+    .product-image {
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    .pro-form-total{
+        width: 100%;
+    }
+    .pro-inp-btn{
+        width: 100%;
+    }
+    .pro-inp-btn a{
+        padding: 18px 121px;
+    }
+    .card-pay-sec{
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+}
